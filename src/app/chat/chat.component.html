@@ -1,0 +1,32 @@
+<!-- <mat-form-field>
+  <input matInput [(ngModel)]="userInput" placeholder="Ask something...">
+</mat-form-field>
+<button mat-raised-button (click)="sendMessage()">Send</button>
+
+<div>
+  @for (msg of messages; track msg){
+  <mat-card>{{ msg }}</mat-card>
+  }
+</div> -->
+
+<!-- <div class="input-wrapper">
+    <label class="input-label" for="userInput">Your Message</label>
+    <input type="text" id="userInput" placeholder="Type something thoughtful...">
+  </div> -->
+  <div>
+  @for (msg of messages; track msg){
+  <div>{{ msg }}</div>
+  }
+</div> 
+  
+  <mat-card class ="custom-card">
+    <mat-card-content>
+     <mat-form-field appearance = "outline" class ="custom-input">
+  <input matInput [(ngModel)]="userInput" placeholder="Ask anything...">
+</mat-form-field>
+    </mat-card-content>
+     <mat-card-actions>
+    <button mat-raised-button (click)="sendMessage()">Send</button>
+  </mat-card-actions>
+  </mat-card>
+
