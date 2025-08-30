@@ -1,44 +1,36 @@
 .chat-div {
-    width: 500px;
-    height: 500px;
-    color: #546E7A;
-    margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  color: #546E7A;
+  margin: 0 auto;
 }
 
-/* .input-wrapper {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-      width: 100%;
-      max-width: 500px;
-    }
-
-    input[type="text"] {
-      width: 100%;
-      padding: 14px 18px;
-      border: 1px solid #d0d7de;
-      border-radius: 8px;
-      font-size: 16px;
-      transition: all 0.3s ease;
-      outline: none;
-    }
-
-    input[type="text"]:focus {
-      border-color: #0078d4;
-      box-shadow: 0 0 0 3px rgba(0, 120, 212, 0.2);
-    } */
 .custom-card {
-    width: 600px;
-    /* or 100% or any responsive unit */
-    max-width: 100%;
-    margin: auto;
-    /* optional: center horizontally */
+  width: 600px;
+  max-width: 100%; 
+  margin: auto;
+  background-color: #ffffff;
+  position:fixed;
+  bottom:20px;
 }
 
 .custom-input {
-    width: 100%;
-    /* or set a fixed width like 400px */
-    max-width: 600px;
-    transition: all 0.3s ease;
+  width: 100%;
+  max-width: 600px;
+  transition: all 0.3s ease;
 }
+.container {
+  height: 300px;
+  width: 600px;
+  overflow-y: auto;
+  overflow-x:auto;
+  padding: 10px;
+}
+
+.msg{
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2em;
+}
+
