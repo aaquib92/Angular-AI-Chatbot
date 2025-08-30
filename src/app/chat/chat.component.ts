@@ -98,6 +98,9 @@ startListening(): void {
   recognition.start();
 }
 
-
+// clear message
+clearMessage(){
+  this.messages =[];
+}
 
 }
