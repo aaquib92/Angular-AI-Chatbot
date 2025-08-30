@@ -15,4 +15,5 @@ export class ChatService {
   const result = await model.generateContent(prompt);
   return result.response.text();
 }
+
 }

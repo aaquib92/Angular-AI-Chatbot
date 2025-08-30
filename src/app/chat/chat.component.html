@@ -1,20 +1,22 @@
-<div class = "container">
- <div class="msg"
-     *ngFor="let msg of messages; let i = index"
-     [ngStyle]="{ 'background-color': getColor(i) }">
-  {{ msg }}
-</div> 
+<div class="container">
+  <div class="msg" *ngFor="let msg of messages; let i = index" [ngStyle]="{ 'background-color': getColor(i) }">
+    {{ msg }}
+  </div>
 </div>
- 
-<br><br>
-  <mat-card class ="custom-card">
-    <mat-card-content>
-     <mat-form-field appearance = "outline" class ="custom-input">
-  <input matInput [(ngModel)]="userInput" placeholder="Ask anything...">
-</mat-form-field>
-    </mat-card-content>
-     <mat-card-actions>
-    <button mat-raised-button (click)="sendMessage()">Send</button>
-  </mat-card-actions>
-  </mat-card>
 
+<br><br>
+<mat-card class="custom-card">
+  <mat-card-content>
+    <mat-form-field appearance="outline" class="custom-input">
+      <input matInput [(ngModel)]="userInput" placeholder="Ask anything...">
+    </mat-form-field>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button (click)="sendMessage()">Send</button>
+    <button mat-raised-button (click)="startListening()">🎤 Speak</button>
+    <div *ngIf="isListening" class="listening-indicator">
+      <span class="pulse-dot"></span> Listening...
+    </div>
+
+  </mat-card-actions>
+</mat-card>
